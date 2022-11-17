@@ -2622,6 +2622,7 @@ ul.game-app__main__div4 li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .game-app__main__div2__left__div3>div:first-child ul {
@@ -2635,8 +2636,68 @@ ul.game-app__main__div4 li {
     margin: 0 5px;
     border-radius: 5px;
 }
+.game-app__main__div2__left__div3>div:first-child ul li:first-child {
+    border: 1px solid blue;
+}
+
+.game-app-divlaptopgaming, 
+.game-app-divdienthoaigaming {
+    display: none;
+}
 
 
+
+.game-app__main__div2__left__div3>div>div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.game-app__main__div2__left__div3>div>div>a {
+    padding: 15px 80px;
+    background-color: green;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.game-app__main__div2__left__div3>div>div>a ion-icon {
+    margin-left: 3px;
+}
+
+.game-app-slick {
+    background-color: white;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.game-app-slick img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 5px;
+}
+
+.game-app-slick p {
+    margin: 5px 0;
+}
+
+.game-app-slick p:nth-child(3){
+    font-size: 13px;
+}
+
+.game-app-slick p:nth-child(4){
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+
+}
+.game-app-slick p:nth-child(5){
+    font-size: 13px;
+    text-decoration:line-through ;
+}
 
 .game-app__main__div2__right {
     width: 24%;

@@ -27,5 +27,39 @@ document.body.onload = function(){
         
     };
     game_app_right_ungdung_div.style.diplay = "block";
+
+    var game_app_menu = document.querySelectorAll(".game-app__main__div2__left__div3>div>ul>li");
+    var game_app_menu_div = document.querySelectorAll(".game-app__main__div2__left__div3>div");
+    console.log(game_app_menu);
+    // game_app_menu_div.splice(0,2);
+    console.log(game_app_menu_div);
+    // game_app_right_game_div.shift();
+    var index = 0;
+    var to_show = function(){
+        for (var i = 0; i<game_app_menu_div.length; i++){
+            
+            if(i==0){
+                continue;
+            }
+            game_app_menu[i-1].style['border'] = "1px solid rgb(204, 176, 176)"
+            game_app_menu_div[i].style.display = "none";
+        }
+        game_app_menu_div[index].style.display = "block";
+        game_app_menu[index-1].style['border'] = "1px solid blue"
+    };
+    for (var i = 0; i<game_app_menu.length; i++){
+        game_app_menu[i].onclick = function(){
+            index = this.id;
+            to_show();
+            console.log(`Show ${index}`)
+        };
+    };
+
 };
 
+
+// Jquery
+document.ready(function() {
+    
+
+});
