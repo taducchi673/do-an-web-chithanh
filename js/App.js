@@ -157,17 +157,8 @@ $(document).ready(function(){
             $(".footer__above").css("height", "430px")
         }
     );
-    $(".game-app-divphukiengaming__slick").slick(
-        {
-        
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 3,
-                prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
-                nextArrow:'<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
-        }
-    );
-    
+   
+
     $('.trungtamlaptop-slider').slick({
         centerMode: true,
         centerPadding: '60px',

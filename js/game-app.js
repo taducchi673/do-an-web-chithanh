@@ -51,7 +51,7 @@ document.body.onload = function(){
         game_app_menu[i].onclick = function(){
             index = this.id;
             to_show();
-            console.log(`Show ${index}`)
+            // console.log(`Show ${index}`);
         };
     };
 
@@ -59,8 +59,96 @@ document.body.onload = function(){
 
 
 // Jquery
-document.ready(function() {
+$(document).ready(function() {
+    for(var i=0; i<6; i++){
+        $(".game-app-divphukiengaming__slick").append(`
+        <div class="game-app-slick">
+                                    <img src="../asset/img/game-app/game-app-phukien1.jpeg" alt="">
+                                    <p>
+                                        Chuột có dây Gaming Asus Keris
+                                    </p>
+                                    <p>
+                                        Chỉ bán online
+                                    </p>
+                                    <p>
+                                        590.000đ
+                                    </p>
+                                    <p>
+                                        1.250.000đ
+                                    </p>
+                                </div>
+        `);
+        $(".game-app-divdienthoaigaming__slick").append(`
+        
+        `);
+        $(".game-app-divlaptopgaming__slick").append(`
+   
+    `);
+
+    }
     
+        $(".game-app-divphukiengaming__slick").slick(
+            {
+            
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
+                    nextArrow:'<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
+            }
+        );
+        
+        
+           
+        
+            $(".game-app-divlaptopgaming__slick").slick(
+                {
+                
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 3,
+                        prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
+                        nextArrow:'<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
+                }
+            );
+    
+    
+       
+               
+            
+                $(".game-app-divdienthoaigaming__slick").slick(
+                    {
+                    
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                            prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
+                            nextArrow:'<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
+                    }
+                );
+    $(".game_app_baivietvegame_button").click(
+        function(){
+            for (var i =0; i<5; i++){
+                console.log("button-clicked")
+                $(".game_app_baivietvegame").append(`
+                    <li>
+                    <a href="">
+                    <img src="../asset/img/game-app/baivietgame2.jpg" alt="">
+                    <div>
+                        <p>
+                            So sánh Snapdragon 870 và Dimensity 1000 Plus, mạnh bất ngờ
+                        </p>
+                        <p>
+                            <span>Lê Tấn Lộc</span>
+                            <span>9 giờ trước</span>
+                        </p>
+                    </div>
+                </a>
+                    </li>
+                `)
+            }
+        }
+    )
 
 });
 
