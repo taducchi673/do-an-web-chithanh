@@ -4,33 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lịch sử đơn hàng</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="../css/file.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/App.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 </head>
 <body>
-    <div class="header-top-banner">
+       <div class="header-top-banner">
         <img src="../asset/img/homepage/head-banner1.png" alt="">
-
-
         <img src="../asset/img/homepage/head-banner2.png" alt="">
-
-
         <img src="../asset/img/homepage/head-banner3.png" alt="">
-
     </div>
+
+    <!-- <form action="#"><input type="checkbox" name="header__diachi__buttonao"></form> -->
     <header>
         <div class="header__top">
             <a href="./homepage.html" class="header__logo">
                 <img src="../asset/thegioididong.jpeg" alt="">
             </a>
 
-            <a href="" class="header__address header__like__button">Xem giá, tồn kho tại:
+            <a href="#" class="header__address header__like__button">Xem giá, tồn kho tại:
                 <span header__address__specific>Hà Nội</span>
                 <ion-icon name="caret-down-outline"></ion-icon>
             </a>
@@ -66,35 +59,74 @@
                     <div class="phu-kien-box">
                         <div class="phu-kien-box__left">
                             <ul>
-                                <li><a href="">Sạc, cáp</a></li>
-                                <li><a href="">Ốp lưng điện thoại</a></li>
-                                <li><a href="">Ốp lưng máy tính bảng</a></li>
-                                <li><a href="">Miếng dán màn hình</a></li>
-                                <li><a href="">Gậy chụp ảnh, Gimbal</a></li>
-                                <li><a href="">Giá đỡ điện thoại</a></li>
-                                <li><a href="">Đế, móc điện thoại</a></li>
-                                <li><a href="">Túi chống nước</a></li>
-                                <li><a href="">Túi đựng AirPods</a></li>
-                                <li><a href="">AirTag</a></li>
-                                <li><a href="">Phụ kiện Tablet</a></li>
+                                <li class="box-details" ><span>PHỤ KIỆN DI ĐỘNG</span></li>
+                                <li><a href="#">Sạc, cáp</a></li>
+                                <li><a href="#">Ốp lưng điện thoại</a></li>
+                                <li><a href="#">Ốp lưng máy tính bảng</a></li>
+                                <li><a href="#">Miếng dán màn hình</a></li>
+                                <li><a href="#">Gậy chụp ảnh, Gimbal</a></li>
+                                <li><a href="#">Giá đỡ điện thoại</a></li>
+                                <li><a href="#">Đế, móc điện thoại</a></li>
+                                <li><a href="#">Túi chống nước</a></li>
+                                <li><a href="#">Túi đựng AirPods</a></li>
+                                <li><a href="#">AirTag</a></li>
+                                <li><a href="#">Phụ kiện Tablet</a></li>
                             </ul>
                         </div>
                         <div class="phu-kien-box__right">
                             <div class="phu-kien-box__right__above">
                                 <ul>
-
+                                    <li class="box-details"><span>PHỤ KIỆN LAPTOP</span></li>
+                                    <li><a href="#">Chuột, bàn phím</a></li>
+                                    <li><a href="#">Thiết bị mạng</a></li>
+                                    <li><a href="#">Balo, túi chống sốc</a></li>
+                                    <li><a href="#">Giá đỡ laptop</a></li>
+                                    <li><a href="#">Phần mềm</a></li>
                                 </ul>
                                 <ul>
-
+                                    <li class="box-details"><span>THIẾT BỊ NHÀ THÔNG MINH</span></li>
+                                    <li><a href="#">Khoá điện tử</a></li>
+                                    <li><a href="#">Camera, Webcam</a></li>
+                                    <li><a href="#">Máy chiếu</a></li>
+                                    <li><a href="#">TV Box</a></li>
+                                    <li><a href="#">Ổ, bóng đèn thông minh</a></li>
                                 </ul>
                                 <ul>
-
+                                    <li class="box-details"><span>THƯƠNG HIỆU HÀNG ĐẦU</span></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Samsung</a></li>
+                                    <li><a href="#">Sony</a></li>
+                                    <li><a href="#">JBL</a></li>
+                                    <li><a href="#">Anker</a></li>
+                                </ul>
+                            </div>
+                            <div class="phu-kien-box__right__below">
+                                <ul>
+                                    <li class="box-details"><span>THIẾT BỊ ÂM THANH</span></li>
+                                    <li><a href="#">Tai nghe</a></li>
+                                    <li><a href="#">Loa</a></li>
+                                    <li><a href="#">Micro thu âm điện thoại</a></li>
+                                    
+                                </ul>
+                                <ul>
+                                    <li class="box-details"><span>THIẾT BỊ LƯU TRỮ</span></li>
+                                    <li><a href="#">Ổ cứng di động</a></li>
+                                    <li><a href="#">USB</a></li>
+                                    <li><a href="#">Thẻ nhớ</a></li>
+                
+                                </ul>
+                                <ul>
+                                    <li class="box-details"><span>PHỤ KIỆN KHÁC</span></li>
+                                    <li><a href="#">Phụ kiện ô tô</a></li>
+                                    <li><a href="#">Máy tính cầm tay</a></li>
+                                    <li><a href="#">Quạt mini</a></li>
+                                    <li><a href="#">Pin tiểu</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="header__main__smartwatch"><a href=""><img
+                <li class="header__main__smartwatch"><a href="./smartwatch.html"><img
                             src="https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png" alt=""> SmartWatch</a></li>
                 <li class="header__main__watch"><a href="./dong-ho.html"><img
                             src="https://cdn.tgdd.vn//content/watch-icon-96x96.png" alt="">Đồng hồ</a></li>
@@ -104,33 +136,33 @@
                     </a>
                     <ul class="header__main__pc-mayin__divcon">
                         <li>
-                            <a href="">Máy in</a>
+                            <a href="#">Máy in</a>
                         </li>
                         <li>
-                            <a href="">Mực in</a>
+                            <a href="#">Mực in</a>
                         </li>
                         <li>
-                            <a href="">Màn hình máy tính</a>
+                            <a href="#">Màn hình máy tính</a>
                         </li>
                         <li>
-                            <a href="">Máy tính để bàn</a>
+                            <a href="#">Máy tính để bàn</a>
                         </li>
                     </ul>
                 </li>
-                <li class="header__main__may-cu-gia-re"><a href="">Máy cũ giá rẻ</a></li>
-                <li class="header__main__sim-the-cao"><a href="">Sim, thẻ cào</a></li>
-                <li class="header__main__dich-vu-tien-ich"><a href="">Dịch vụ tiện ích<ion-icon
+                <li class="header__main__may-cu-gia-re"><a href="#">Máy cũ giá rẻ</a></li>
+                <li class="header__main__sim-the-cao"><a href="#">Sim, thẻ cào</a></li>
+                <li class="header__main__dich-vu-tien-ich"><a href="#">Dịch vụ tiện ích<ion-icon
                             name="caret-down-outline"></ion-icon></a>
                     <table class="header__main__dich-vu-tien-ich__box">
                         <tr class="table__columns">
                             <th>
-                                <p>TRẢ GÓP, ĐIỆN NƯỚC, VÉ CÁC LOẠI</p>
+                                <p><span class="box-details">TRẢ GÓP, ĐIỆN NƯỚC, VÉ CÁC LOẠI</span></p>
                             </th>
                             <th>
-                                <p>INTERNET, CƯỚC, TRUYỀN HÌNH</p>
+                                <p><span class="box-details">INTERNET, CƯỚC, TRUYỀN HÌNH</span></p>
                             </th>
                             <th>
-                                <p>BẢO HIỂM, VIỆN PHÍ</p>
+                                <p><span class="box-details">BẢO HIỂM, VIỆN PHÍ</span></p>
                             </th>
                         </tr>
                         <tr>
@@ -173,7 +205,7 @@
             <div>
                 <img src="../asset/img/history/history.png" alt="">
                 <p>Tra cứu thông tin đơn hàng</p>
-                <form action="">
+                <form action="post">
                     
                     <div>
                         <img src="https://th.bing.com/th/id/R.513ac71f4c0e71a47d3259b5d93a1474?rik=%2fp4EHn%2fWeljArg&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fa%2fr%2fy%2f3%2fA%2ficon-mobile-phone-hi.png&ehk=E4nkMS8GnRLIp7mgobLjOaOkIr9S%2bv6ax%2bh4wWGpg8Y%3d&risl=&pid=ImgRaw&r=0"  alt="">
@@ -190,45 +222,57 @@
             <div class="footer__div1">
                 <ul>
                     <li>
-                        Tích điểm Quà tặng VIP
+                        <a href="#">Tích điểm Quà tặng VIP</a>
                     </li>
                     <li>
-                        Lịch sử mua hàng
+                        <a href="#">Lịch sử mua hàng</a>
                     </li>
                     <li>
-                        Tìm hiểu về mua trả góp
+                        <a href="#">Tìm hiểu về mua trả góp</a>
                     </li>
                     <li>
-                        Chính sách bảo hành
+                        <a href="#">Chính sách bảo hành</a>
                     </li>
-                    <li class="footer__xemthem">
+                    <li  class="footer__div1__tohide">
                         Xem thêm <ion-icon name="caret-down-outline"></ion-icon>
                     </li>
+                    <div class="footer__div1__toshow">
+                        <li><a href="#">Giao hàng & Thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn mua online</a></li>
+                        <li><a href="#">Bán hàng doanh nghiệp</a></li>
+                        <li><a href="#">Phiếu mua hàng</a></li>
+                        <li><a href="#">In hoá đơn điện tử</a></li>
+                        <li><a href="#">Quy chế hoạt động</a></li>
+                        <li><a href="#">Nội dung cửa hàng</a></li>
+                        <li><a href="#">Chất lượng phục vụ</a></li>
+                        <li><a href="#">Cảnh báo giả mạo</a></li>
+                        <li><a href="#">Chính sách khui hộp sản phẩm Apple</a></li>
+                    </div>
                 </ul>
             </div>
             <div class="footer__div2">
                 <ul>
                     <li>
-                        Giới thiệu công ty (MWG.vn)
+                       <a href="#"> Giới thiệu công ty (MWG.vn)</a>
                     </li>
                     <li>
-                        Tuyển dụng
+                        <a href="#">Tuyển dụng</a>
                     </li>
                     <li>
-                        Gửi góp ý, khiếu nại
+                        <a href="#">Gửi góp ý, khiếu nại</a>
                     </li>
                     <li>
-                        Tìm siêu thị (3.333 shop)
+                        <a href="#">Tìm siêu thị (3.333 shop)</a>
                     </li>
                     <li>
-                        Xem bản mobile
+                       <a href="#"> Xem bản mobile</a>
                     </li>
                 </ul>
             </div>
             <div class="footer__div3">
                 <ul>
                     <li>
-                        Tổng đài hỗ trợ (Miễn phí gọi)
+                        <a href="#">Tổng đài hỗ trợ (Miễn phí gọi)</a>
                     </li>
                     <li>
                         <span class="span-before-phone">Gọi mua:</span><span class="phone-number">1800.1060</span> (7:30
@@ -251,24 +295,30 @@
             <div class="footer__div4">
                 <div class="footer__div4__above">
                     <div>
-                        <img src="../asset/img/homepage/facebook.png" alt="">3773k Fan
+                        <img src="../asset/img/homepage/facebook.png" alt="">
+                       <a href="#"> 3773k Fan</a>
                     </div>
                     <div>
                         <img src="../asset/img/homepage/youtube.png" alt="">
-                        850k Đăng ký
+                        <a href="#">850k Đăng ký</a>
                     </div>
                     <div>
                         <img src="../asset/img/homepage/zalo.png" alt="">
-                        Zalo TGDĐ
+                        <a href="#">Zalo TGDĐ</a>
                     </div>
                 </div>
                 <div class="footer__div4__center">
                     <img src="https://mdcop.vn/wp-content/uploads/2019/04/da-thong-bao-bo-cong-thuong-705x267.png"
                         alt="">
-                    <img src="https://mdcop.vn/wp-content/uploads/2019/04/da-thong-bao-bo-cong-thuong-705x267.png"
-                        alt="">
-                    <img src="https://mdcop.vn/wp-content/uploads/2019/04/da-thong-bao-bo-cong-thuong-705x267.png"
-                        alt="">
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
                 <div class="footer__div4__below">
                     Website cùng tập đoàn
@@ -302,10 +352,17 @@
                 © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007.
                 GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
                 <br> Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
-                cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="" style="color: blue">Xem
+                cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="#" style="color: blue">Xem
                     chính sách sử dụng</a>
             </p>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/App.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
