@@ -30,9 +30,10 @@ button {
  
 button:hover {
     cursor: pointer;
-    background-image: linear-gradient(#FFA384, #74BDCB);
- 
 }
+
+
+
 .chuoi-moi-deal-khung-slider button.slick-prev,
 .before-banner button.slick-prev {
     left: -20px;
@@ -1668,6 +1669,73 @@ img.history__img__form {
     height: 30px;
     border-radius: 50%;
 }
+
+/* Laptop ul */
+.list-types-devices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-types-devices>div {
+    width: 19%;
+    position: relative;
+}
+
+.list-types-devices>div>div img {
+    height: 90px;
+    width: 85px;
+    margin-right: 10px;
+}
+
+.list-types-devices>div>div {
+   background-color: white;
+   border: 10px solid rgb(182, 68, 68);
+   border-left: none;
+   border-right: none;
+   border-radius: 10px ;
+   display: flex;
+   align-items: center;
+}
+
+.list-types-devices>div>ul {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: #121A2D;
+    border: 1px solid black;
+}
+
+
+.list-types-devices>div>ul>div {
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+
+.list-types-devices>div>ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-types-devices>div>ul li a div {
+    background-color: #ddbaba;
+    border-radius: 50%;
+}
+
+.list-types-devices>div>ul li a div img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+   
+}
+
 
 /* Laptop--chuyen trang thuong hieu */
 

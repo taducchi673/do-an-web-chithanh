@@ -201,9 +201,12 @@ $(document).ready(function(){
         }
     );
     
-
-    
-    
+    $(".list-types-devices>div>div:first-child").hover(function(){
+        $(this).next("ul").slideToggle(500);
+        console.log($(this).next("ul"));
+   });
+   
+   
 });
 
 
@@ -226,4 +229,3 @@ var tintuc_xulyxemthem = function(){
 }
 
 
-// Game - App
