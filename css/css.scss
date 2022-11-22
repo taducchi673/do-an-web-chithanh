@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+    .phukien__phukiennoibat>a::nth-child(#{$i})>div {
+        background-image: linear-gradient(calc(($i)*10 + 50)+ deg, black, blue );
+    }
+}

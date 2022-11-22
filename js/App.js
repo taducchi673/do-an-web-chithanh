@@ -171,26 +171,25 @@ $(document).ready(function(){
       });
           
     
-    function runOnScroll() {
-        var height= document.body.scrollTop;
-        var category = document.getElementsByClassName("fixed__category")[0];
-        if (height>= 205) {
-            category.style["margin-left"] = "-20%";
-            category.style["margin-right"] = "-20%";
-        }
-        else if (height<205){
-            category.style["margin-left"] = "0%";
-            category.style["margin-right"] = "0%";
-            category.style["background-color"] = "black";
-            category.style["color"] = "white";
-        }
+    // function runOnScroll() {
+    //     var height= document.body.scrollTop;
+    //     var category = document.getElementsByClassName("fixed__category")[0];
+    //     if (height>= 205) {
+    //         category.style["margin-left"] = "-20%";
+    //         category.style["margin-right"] = "-20%";
+    //     }
+    //     else if (height<205){
+    //         category.style["margin-left"] = "0%";
+    //         category.style["margin-right"] = "0%";
+    //         category.style["background-color"] = "black";
+    //         category.style["color"] = "white";
+    //     }
 
-     }; 
-    window.addEventListener("scroll", runOnScroll);
+    //  }; 
+    // window.addEventListener("scroll", runOnScroll);
     // var slickdotactive = document.getElementsByClassName(".slick-active")[0];
     //  slickdotactive.style["background-color", "black"];
-
-    
+ 
     $(".hoi-dap__main__below__left>ul>li>div").click(function(){
         $(this).parent().find("ul").slideToggle(300);
     });
@@ -206,7 +205,31 @@ $(document).ready(function(){
         console.log($(this).next("ul"));
    });
    
-   
+    $(".thuonghieuhangdau-show").click(
+        function(){
+            $(".phukien-toshow").css("display", "flex");
+            $(".thuonghieuhangdau-show").hide();
+        }
+    )
+
+    $(".thuonghieuhangdau-hide").click(
+        function(){
+            $(".thuonghieuhangdau-show").show();
+            $(".phukien-toshow").css("display", "none");
+        }
+    )
+
+    $(".phukien__phukien-giam-soc__slider").slick(
+        {
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
+            nextArrow:'<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
+            centralPadding: '10px',
+        }
+    );
+
 });
 
 
@@ -225,7 +248,5 @@ tintuc_show();
 var tintuc_xulyxemthem = function(){
     number_to_show += 2;
     tintuc_show();
-
 }
-
 

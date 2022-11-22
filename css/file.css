@@ -411,6 +411,8 @@ main > img {
 .header__main__phu-kien {
     position: relative;
 }
+
+
 .phu-kien-box {
     width: 770px;
     height: 330px;
@@ -1058,6 +1060,9 @@ main > ul.option__promo {
         padding: 0 18%;
         min-width: 1200px;
     }
+    .phukien__main__fixed-div {
+        padding: 0 18%;
+    }
 }
 
 @media (min-width: 1300px) and (max-width: 1900px) {
@@ -1078,6 +1083,9 @@ main > ul.option__promo {
         padding: 0 10%;
         min-width: 1200px;
     }
+    .phukien__main__fixed-div {
+        padding: 0 10%;
+    }
 }
 @media (max-width: 1300px)  {
     header {
@@ -1091,6 +1099,9 @@ main > ul.option__promo {
         padding: 18px 1%;
     }
     main {
+        padding: 0 1%;
+    }
+    .phukien__main__fixed-div {
         padding: 0 1%;
     }
 }
@@ -3061,8 +3072,282 @@ ul.game-app__main__div4 li {
     border-radius: 5px;
     color: rgb(136, 108, 108);
 }
+/* Phukien Page here */
+
+body:has(.phukien__main__fixed-div) {
+    background-color: #FFFaf0;
+}
+.phukien__main__fixed-div {
+    height: 110px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black ;
+    z-index: 10001;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.phukien__main__fixed-div li a  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul.phukien__main__fixed-div li a div {
+    background-color: whitesmoke;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.phukien__main__fixed-div li a div img {
+
+    height:  45px;
+    width: 45px;
+    /* border-radius: 50%;  */
+}
+ul.phukien__main__fixed-div li a p  {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.phukien__phukiennoibat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phukien__phukiennoibat>a {
+    width: calc(95% / 10); 
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+.phukien__phukiennoibat>a>div {
+    background:#07A358;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
 
 
+.phukien__phukiennoibat>a>div>img {
+    height: 65px;
+    width: 65px;
+}
+
+.phukien__phukiennoibat > a:nth-child(1) > div {
+    background-image: linear-gradient(60deg, rgb(99, 177, 106), rgb(86, 86, 196));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(2) > div {
+    background-image: linear-gradient(70deg, rgb(179, 110, 110), rgb(128, 199, 70));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(3) > div {
+    background-image: linear-gradient(80deg, rgb(209, 69, 69), rgb(212, 224, 37));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(4) > div {
+    background-image: linear-gradient(90deg, rgb(206, 103, 103), blue);
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(5) > div {
+    background-image: linear-gradient(100deg, rgb(199, 92, 92), rgb(89, 89, 223));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(6) > div {
+    background-image: linear-gradient(110deg, rgb(92, 219, 42), blue);
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(7) > div {
+    background-image: linear-gradient(120deg, rgb(99, 189, 103), rgb(27, 255, 65));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(8) > div {
+    background-image: linear-gradient(130deg, rgb(219, 53, 53), rgb(151, 204, 52));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(9) > div {
+    background-image: linear-gradient(140deg, rgb(33, 134, 13), rgb(147, 147, 238));
+  }
+  
+  .phukien__phukiennoibat > a:nth-child(10) > div {
+    background-image: linear-gradient(150deg, rgb(187, 116, 116), rgb(130, 184, 43));
+  }
+  
+  /*# sourceMappingURL=css.css.map */
+  .phukien__quick-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.phukien__quick-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(204, 190, 190);
+    margin-bottom: 10px;
+}
+
+.phukien__quick-link a img {
+    height: 25px;
+    width: 100px;
+}
+
+.thuonghieuhangdau-show, 
+.thuonghieuhangdau-hide {
+    position: relative;
+    height: 44px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(204, 190, 190);
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thuonghieuhangdau-show ion-icon, 
+.thuonghieuhangdau-hide ion-icon{
+    margin-left: 5px;
+}
+
+a.phukien-toshow,
+button.phukien-toshow {
+    display: none;
+}
+
+.phukien__phukien-giam-soc {
+    height: 550px;
+    width: 100%;
+    background-color: #A70028;
+    padding: 10px;
+}
+
+.phukien__phukien-giam-soc__slider {
+    padding: 10px 0;
+}
+
+.phukien__phukien-giam-soc img {
+    width: 100%;
+}
+
+.phukien__phukien-giam-soc__slider__items {
+    height: 400px;
+    width: 240px;
+    background-color: white;
+    padding: 10px;
+}
+
+.phukien__phukien-giam-soc__slider__items img {
+    width: 100%;
+    height: initial;
+    margin: 15px 0;
+}
+
+.phukien__phukien-giam-soc__slider__items p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.phukien__phukien-giam-soc__slider__items p:nth-child(3) {
+    text-decoration: line-through;
+}
+
+.phukien__phukien-giam-soc__slider__items p:nth-child(4) {
+    font-weight: bold;
+    color: red;
+    font-size: 18px
+}
+
+.phukien__phukien-giam-soc__slider button {
+    height: 50px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #1fddff;
+}
+.phukien__phukien-giam-soc__slider button.slick-prev
+ {
+    left: -5px;
+    top: 200px;
+}
+
+.phukien__phukien-giam-soc__slider  button.slick-next
+{
+    right: -5px;
+    top: 200px;
+    
+}
+
+
+.phukien__phukien-giam-soc__slider button ion-icon
+ {
+    height: 20px;
+    width: 20px;
+    color: rgb(219, 76, 76);
+}
+
+.phukien__main__div {
+    margin: 50px 0;
+}
+
+.phukien__main__div img {
+    width: 100%;
+}
+
+.phukien__main__div__nav {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.phukien__main__div__nav li {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid rgb(195, 214, 108);
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.phukien__main__div>a:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+
+.phukien__main__div>a:last-child {
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #5763d6;
+    background-color: white;
+    display: flex;
+    border: 1px solid #5763d6;
+    justify-content: center;
+    margin: 0 33%;
+    width: 34%;
+}
+
+.phukien__main__div>a:last-child ion-icon {
+    margin-left: 5px;
+}
 /* --- START - SMARTWATCH */
 
 /* --- START - DONG HO */
