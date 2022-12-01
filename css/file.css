@@ -6,6 +6,10 @@
     /* font-size: 15px; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -1589,7 +1593,13 @@ img.history__img__form {
     flex-direction: column;
     justify-content: space-between;
 }
+.laptop-banner>a {
+    width: 100%;
+}
 
+.laptop-banner>a img {
+    width:100%;
+}
 
 .laptop-slider button.slick-prev,
 .before-banner button.slick-prev {
@@ -1634,16 +1644,27 @@ img.history__img__form {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+   
 }
 
 .laptop__quick-link > a{
     width: calc(95% / 7);
     background-color: white ;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+   
+}
+
+.laptop__quick-link > a:hover {
+    border: 2px solid rgb(88, 88, 170);
 }
 
 .laptop__quick-link > a> img {
     border-radius: 20px;
+    height: 30px;
 }
 
 /* FIXED Category--------------- */
@@ -1701,11 +1722,14 @@ img.history__img__form {
 .list-types-devices>div>div {
    background-color: white;
    border: 10px solid rgb(182, 68, 68);
-   border-left: none;
-   border-right: none;
+   border-left-width: 1px;
+   border-right-width: 1px;
    border-radius: 10px ;
    display: flex;
    align-items: center;
+   font-weight: bold;
+   justify-content: center;
+   font-size: 14px;
 }
 
 .list-types-devices>div>ul {
@@ -1713,12 +1737,70 @@ img.history__img__form {
     background-color: white;
     border-radius: 10px;
     position: absolute;
-    top: 120px;
+    top: 108px;
     left: 0;
     z-index: 1000;
-    box-shadow: #121A2D;
     border: 1px solid black;
+    height: 200px;
 }
+
+.list-types-devices>div>ul {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.list-types-devices>div>ul>div {
+    display: flex;
+    justify-content: space-between;
+
+}
+.list-types-devices>div>ul>div>li {
+   
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-types-devices>div>ul>div>li>a {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-types-devices>div>ul>div>li>a>img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.list-types-devices>div>ul>li>a>img {
+    width: 50px;
+    height: 50px;
+}
+
+.list-types-devices>div:nth-child(1)>ul {
+    width: 500px;
+
+}
+
+.list-types-devices>div:nth-child(2)>ul {
+    width: 500px;
+}
+.list-types-devices>div:nth-child(3)>ul {
+    width: 250px;
+    height: 150px;
+}
+.list-types-devices>div:nth-child(4)>ul {
+    width: 500px;
+}
+
 
 
 .list-types-devices>div>ul>div {
@@ -1788,8 +1870,8 @@ img.history__img__form {
 .laptop-trungtamlaptop-wrapper {
     background-color: #121A2D;
     height: 940px;
-    margin: 0 -12%;
-    padding: 20px 0;
+   width: 100vw;
+   margin: 0 -13%;
 }
 .trungtamlaptop-slider {
     z-index: 1;
@@ -1857,6 +1939,26 @@ div.trungtamlaptop-slider > button:hover {
 
 .clear {
     height: 1000px;
+}
+
+.laptop__display__img {
+    height: 100wh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    /* display: none; */
+    z-index: 100000;
+    top: 0;
+    left: 0;
+}
+
+.laptop__display__img>div {
+    height: 80%;
+    width: 80%;
+}
+
+.laptop__display__img>div>img {
+    display: none;
 }
 
 /* TIN TUC PAGE */
@@ -2004,9 +2106,8 @@ div.trungtamlaptop-slider > button:hover {
 
 
 .tin-tuc__main__left__div2 a{
-   
     display: flex;
-    margin: 25px 0;
+    margin: 10px 0;
     border-bottom: 1px solid rgb(228, 222, 222);
     padding-bottom: 5px;;
 }
@@ -2542,6 +2643,7 @@ ul.game-app__main__div4 li a img {
     align-items: center;
     text-transform: uppercase;
     text-align: center;
+    font-size: 14px;
     
 }
 
@@ -2556,6 +2658,9 @@ ul.game-app__main__div4 li a img {
     height: 20px;
     width: 20px;
     margin-right: 10px;
+}
+.game-app__main__div1__right>div>a {
+    font-size: 14px;
 }
 
 ul.game-app__main__div4 {
@@ -2793,6 +2898,10 @@ ul.game-app__main__div4 li {
     background-color: green;
 }
 
+
+.game-app__main__div2__right h4 {
+    margin: 25px 0;
+}
 .game-app__main__div2__right img {
     height: 90px;
     width: 100%;
@@ -2822,6 +2931,7 @@ ul.game-app__main__div4 li {
     justify-content: center;
     width: 50%;
     border: 1px solid rgb(201, 182, 182); 
+    font-size: 14px;
 }
 
 
@@ -3237,6 +3347,7 @@ button.phukien-toshow {
     width: 100%;
     background-color: #A70028;
     padding: 10px;
+    position: relative;
 }
 
 .phukien__phukien-giam-soc__slider {
@@ -3245,6 +3356,17 @@ button.phukien-toshow {
 
 .phukien__phukien-giam-soc img {
     width: 100%;
+}
+
+.phukiengiamsocden {
+    position: absolute;
+    font-size: 80;
+    font-weight: bold;
+    color: rgb(255, 228, 95);
+    top: 15px;
+    right: 200px;
+    z-index: 100;
+
 }
 
 .phukien__phukien-giam-soc__slider__items {
@@ -3325,13 +3447,10 @@ button.phukien-toshow {
     cursor: pointer;
 }
 
+
 .phukien__main__div>a:last-child {
     display: flex;
     justify-content: center;
-}
-
-
-.phukien__main__div>a:last-child {
     padding: 8px 0;
     border-radius: 5px;
     font-size: 13px;
@@ -3339,15 +3458,78 @@ button.phukien-toshow {
     color: #5763d6;
     background-color: white;
     display: flex;
-    border: 1px solid #5763d6;
     justify-content: center;
     margin: 0 33%;
     width: 34%;
+    margin-top: 15px;
+    border: 1px solid #88e471 ;
+}
+.phukien__main__div>a:last-child:hover {
+    border: 1px solid #5763d6;
 }
 
 .phukien__main__div>a:last-child ion-icon {
     margin-left: 5px;
 }
+
+
+.phukien__main__div>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.phukien__main__div__flex {
+    display: flex;
+    width: calc(98% / 5);
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.phukien__main__div__flex img {
+    width: 100%;
+}
+
+.phukien__main__div__flex:hover p:nth-child(2){
+    color: blue;
+}
+
+
+.phukien__main__div__flex:hover img{
+   transform: translate(0,-10px);
+   transition: all 300ms linear;
+}
+
+.phukien__main__div__flex p {
+    margin: 5px 0;
+}
+
+.phukien__main__div__flex p:nth-child(2) {
+    font-size: 15px;
+    margin-top: 10px
+}
+
+.phukien__main__div__flex p:nth-child(3) {
+
+    font-size: 12px;
+}
+
+.phukien__main__div__flex p:nth-child(3)>span:first-child {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.phukien__main__div__flex p:nth-child(4) {
+   font-weight: bold;
+   color: black;
+   font-size: 17px;
+}
+
+
 /* --- START - SMARTWATCH */
 
 /* --- START - DONG HO */

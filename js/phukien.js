@@ -3,6 +3,7 @@ document.body.onload = function(){
     function runOnScroll() {
         var height= document.body.scrollTop;
         var phukien_fixed_div = document.getElementsByClassName("phukien__main__fixed-div")[0];
+        console.log(height);
         if (height>= 600) {
             phukien_fixed_div.style.display= "flex";
         }
@@ -10,25 +11,51 @@ document.body.onload = function(){
             phukien_fixed_div.style.display= "none";
         }
         console.log(height);
-        if (height>800 && height<1368) {
+        if (height>800 && height<1280) {
             index_fixed_li=0;
             fixed_div_xuly();
         }
-        else {
+        else if  (height>1280 && height<2300) {
             index_fixed_li = 1;
             fixed_div_xuly();
-
+        }
+        else if  (height>2300 && height<3200) {
+            index_fixed_li = 2;
+            fixed_div_xuly();
+        }
+        else if  (height>3200 && height<4150) {
+            index_fixed_li = 3;
+            fixed_div_xuly();
+        }
+        else if  (height>4150 && height<5050) {
+            index_fixed_li = 4;
+            fixed_div_xuly();
+        }
+        else if  (height>5050 && height<6010) {
+            index_fixed_li = 5;
+            fixed_div_xuly();
+        }
+        else if  (height>6010 && height<6816) {
+            index_fixed_li = 6;
+            fixed_div_xuly();
+        }
+        else if  (height>6816 && height<8000) {
+            index_fixed_li = 7;
+            fixed_div_xuly();
         }
      };
      window.addEventListener("scroll", runOnScroll);
      
      var phukien__main__fixed_div = document.querySelectorAll(".phukien__main__fixed-div>li>a>div");
+     var phukien__main__fixed_p = document.querySelectorAll(".phukien__main__fixed-div>li>a>p");
      function fixed_div_xuly(){
         for (var i=0; i<phukien__main__fixed_div.length; i++){
             phukien__main__fixed_div[i].style["background-color"] = "white";
+            phukien__main__fixed_p[i].style['color'] = "white";
         }
         phukien__main__fixed_div[index_fixed_li].style["background-color"] = "#F2C94C";
-     }
+        phukien__main__fixed_p[index_fixed_li].style['color'] = "#F2C94C"; 
+    }
 
      function init_style(string){
         var li_phukien__main__div = document.querySelectorAll(`${string}>ul>li`);
