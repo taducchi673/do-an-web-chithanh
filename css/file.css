@@ -1064,8 +1064,9 @@ main > ul.option__promo {
         padding: 0 18%;
         min-width: 1200px;
     }
+    .laptop__main__fixed-div,
     .phukien__main__fixed-div {
-        padding: 0 18%;
+        padding: 0 21%;
     }
 }
 
@@ -1087,8 +1088,9 @@ main > ul.option__promo {
         padding: 0 10%;
         min-width: 1200px;
     }
+    .laptop__main__fixed-div ,
     .phukien__main__fixed-div {
-        padding: 0 10%;
+        padding: 0 13%;
     }
 }
 @media (max-width: 1300px)  {
@@ -1105,8 +1107,10 @@ main > ul.option__promo {
     main {
         padding: 0 1%;
     }
+
+    .laptop__main__fixed-div,
     .phukien__main__fixed-div {
-        padding: 0 1%;
+        padding: 0 3%;
     }
 }
 
@@ -1558,6 +1562,11 @@ img.history__img__form {
 }
 
 /* Laptop Page */
+body:has(.laptop__main__divtype2) {
+    background: #EAEAEA;
+}
+
+
 
 .laptop__slider-banner {
     display: flex;
@@ -1665,6 +1674,186 @@ img.history__img__form {
 .laptop__quick-link > a> img {
     border-radius: 20px;
     height: 30px;
+}
+.laptop__main__divtype1,
+.laptop__main__divtype2 {
+    width: 100%;
+}
+
+.laptop__main__divtype1>img,
+.laptop__main__divtype2>img {
+    width: 100%;
+}
+
+.laptop__main__divtype2>div,
+.laptop__main__divtype1>div{
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.laptop__main__divtype-divdiv {
+    margin-bottom: 10px;
+    width: calc(97% / 5);
+    height: 470px;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.laptop__main__divtype-divdiv>ul {
+    display: flex;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.laptop__main__divtype-divdiv>ul>li {
+    padding: 2px 10px;
+    border: 1px solid rgb(222, 205, 205);
+
+    border-radius: 3px;
+    
+}
+
+.laptop__main__divtype-divdiv>ul>li:last-child {
+    margin-left: 5px;
+}
+
+.laptop__main__divtype-divdiv>p {
+    font-size: 13px;  
+    margin: 10px 0;
+}
+
+.laptop__main__divtype-divdiv>p.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.laptop__main__divtype-divdiv:hover>a img {
+    transform: translate(0, -10px);
+    scale: 1.005;
+    transition: all 300ms;
+
+}
+
+.laptop__main__divtype-divdiv:hover>a>p {
+    color: blue;
+}
+
+.laptop__main__divtype1 {
+    position: relative;
+}
+
+.laptop__main__divtype1__absolute {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+    width: 400px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.laptop__main__divtype1__absolute>p:first-child {
+    display: none;
+    height: 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+    text-align: center;
+    border-radius: 10px;;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transition: all 0.3s;
+    background-color: white;
+    color:rgb(82, 82, 218)
+}
+
+.laptop__main__divtype1__absolute>button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #98bdd5;
+}
+
+
+.laptop__main__divtype1__absolute:has(>button:hover)>p {
+    display: block;
+}
+
+.laptop__main__divtype1__absolute>div:last-child {
+    display: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.laptop__main__divtype1__absolute>div:last-child>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.laptop__main__divtype1__absolute-quitbutton {
+    position: relative;
+    height: 35px;
+    width: 35px;
+}
+
+.laptop__main__divtype1__absolute>div:last-child>div h4 {
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.laptop__main__divtype1__absolute>div:last-child>div>button>ion-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.laptop__main__divtype1__absolute>div:last-child>p:nth-child(3){
+    margin: 10px 0;
+}
+
+.laptop__main__divtype1__absolute>div:last-child>ul li {
+    list-style:disc;
+    list-style-position: inside
+}
+
+.laptop__main__divtype1>a,
+.laptop__main__divtype2>a {
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    display: block;
+    height: 40px;
+    width: 30%;
+    margin: 20px 35%;
+    background-color: #288AD6;
+    text-transform: uppercase;
+    background-color:white;
+    color: #4d4343;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 14px;
+
+}
+
+.laptop__main__divtype1__absolute>div:last-child {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+
+}
+.laptop__main__divtype-divdiv>a>img {
+    padding: 30px 0 15px 0;
+    width: 100%;
 }
 
 /* FIXED Category--------------- */
@@ -1848,10 +2037,136 @@ img.history__img__form {
 }
 /* Trung tam laptiop */
 
-.trungtamlaptop-slider img {
-    height: 310px;
-    width: 550px;
+
+.laptop__trungtamlaptop {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.laptop__trungtamlaptop ul {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.laptop__trungtamlaptop ul li {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.phukien__phukien-giam-soc:has(.laptop__main__divtype1-divdiv) {
+    background-color: #4B814C;
+    height: auto;
+}
+
+.trungtamlaptop-slider {
+   
+    position: relative;
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 20px;
+}
+
+.trungtamlaptop-slider>div>img {
+    height: 310px;
+    width: calc(98% / 2);
+    cursor: pointer;
+    border-radius: 10px;    
+}
+
+.trungtamlaptop-slider>div {
+    width: 100%;
+    justify-content: space-between;
+}
+.trungtamlaptop__cuahangtimkiem {
+    background-color: #151F38;
+    width: 80%;
+    padding: 20px 50px;
+     margin: 50px 10% 0 10%;
+     box-shadow: 0 4px 8px 0 rgba(201, 185, 185, 0.2), 0 6px 20px 0 rgba(201, 189, 189, 0.19);
+     border: 1px solid rgb(95, 84, 84);
+}
+
+
+.trungtamlaptop__timkiem {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #294482;
+    font-size: 18px;
+}
+
+select
+{
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: white;
+    line-height: 40px;
+    outline: none;
+
+}
+
+.trungtamlaptop__cuahang {
+  
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.trungtamlaptop__cuahang>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trungtamlaptop__cuahang>button {
+    position: relative;
+    background-color: transparent;
+    color: blue;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.trungtamlaptop__cuahang>button ion-icon {
+    margin-left: 5px;
+}
+
+
+
+.trungtamlaptop__cuahang>div> a {
+    width: 50%;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.trungtamlaptop__cuahang a p:first-child{
+    font-weight: bold;
+}
+
+.trungtamlaptop__cuahang a p {
+    margin: 10px 0;
+}
+
+.trungtamlaptop__cuahang a p:first-child span {
+    color: rgb(56, 56, 210);
+    margin-left: 20px;
+}
+
 
 /* Các sản phẩm công nghệ khác */
 
@@ -1869,96 +2184,107 @@ img.history__img__form {
 /* Trung tam laptop */
 .laptop-trungtamlaptop-wrapper {
     background-color: #121A2D;
-    height: 940px;
    width: 100vw;
    margin: 0 -13%;
-}
-.trungtamlaptop-slider {
-    z-index: 1;
-}
-.trungtamlaptop-slider button.slick-prev
-{
-    left: 50px;
-    top: 150px;
-}
-
-.trungtamlaptop-slider  button.slick-next {
-    right: 50px;
-    top: 150px;
-}
-
-.trungtamlaptop-slider  button.slick-next,.trungtamlaptop-slider button.slick-prev {
-    opacity: 0.5;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-.slick-dots {
-    margin-left: 20px;
-    margin-top: 20px;
-    display: flex;
-    z-index: 100;
-    width: 200px;
-    justify-content: space-between;
-    margin-left: calc(50% - 190px);
-}
-.slick-dots li  {
-    margin: 10px 30px;
-}
-.slick-dots li button {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-}
-
-/* .slick-active {
-    background-color: black;
-} */
-
-div.trungtamlaptop-slider > button:hover {
-    background-color: white;
+   position: relative;
+   min-height: 950px;
+   padding-bottom: 50px;
 }
 
 
-.trungtamlaptop-slider button ion-icon,
-.before-bannr button ion-icon {
-    height: 20px;
-    width: 20px;
-    color: rgb(219, 76, 76);
-}
 
-
-.slick-initialized .slick-slide {
-    margin: 10px;
-}
-
-.truntamlaptop-slider ul.slick-dots {
-    margin-left: 250px;
-    background-color: #092dc6;
-}
 
 .clear {
     height: 1000px;
 }
 
 .laptop__display__img {
-    height: 100wh;
+    height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    /* display: none; */
-    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 1000;
+    display: none;
     top: 0;
     left: 0;
+    z-index: 100001;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.laptop__display__img>div {
-    height: 80%;
+
+
+.laptop__display__img>div:last-child {
     width: 80%;
+    height: 85%;
+    position: relative;
+}
+
+
+.laptop__display__img>div:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.laptop__display__img>div:last-child>button {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    height: 60px;
+    width: 30px;
+}
+
+.laptop__display__img>div:last-child>button.quit-button {
+    height:  40px;
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.laptop__display__img>div:last-child>button.quit-button ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.trungtamlaptop-slider button {
+    position: absolute;
+}
+
+.laptop__display__img>div > button.giam {
+    z-index: 1000001;
+    top: 42%;
+    left: -20px;
+}
+
+.trungtamlaptop-slider button.tang
+ {
+    right: -100px;
+    z-index: 1001;
+    top: 42%;
+}
+.trungtamlaptop-slider button.giam
+ {
+    left: -100px;
+    z-index: 1001;
+    top: 42%;
+}
+
+.laptop__display__img>div> button.tang
+ {
+    right: -20px;
+    z-index: 1000001;
+    top: 42%;
 }
 
 .laptop__display__img>div>img {
-    display: none;
+    
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* TIN TUC PAGE */
@@ -3187,6 +3513,8 @@ ul.game-app__main__div4 li {
 body:has(.phukien__main__fixed-div) {
     background-color: #FFFaf0;
 }
+
+.laptop__main__fixed-div,
 .phukien__main__fixed-div {
     height: 110px;
     width: 100vw;
@@ -3199,13 +3527,14 @@ body:has(.phukien__main__fixed-div) {
     justify-content: space-between;
     align-items: center;
 }
-
+ul.laptop__main__fixed-div li a ,
 ul.phukien__main__fixed-div li a  {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+ul.laptop__main__fixed-div li a div,
 ul.phukien__main__fixed-div li a div {
     background-color: whitesmoke;
     height: 65px;
@@ -3215,12 +3544,16 @@ ul.phukien__main__fixed-div li a div {
     justify-content: center;
     align-items: center;
 }
+
+ul.laptop__main__fixed-div li a div img,
 ul.phukien__main__fixed-div li a div img {
 
     height:  45px;
     width: 45px;
     /* border-radius: 50%;  */
 }
+
+ul.laptop__main__fixed-div li a p,
 ul.phukien__main__fixed-div li a p  {
     color: white;
     font-size: 14px;
@@ -3401,7 +3734,9 @@ button.phukien-toshow {
     height: 50px;
     width: 30px;
     border-radius: 5px;
-    background-color: #1fddff;
+    background-color: rgb(243, 223, 223);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 .phukien__phukien-giam-soc__slider button.slick-prev
  {
@@ -3487,6 +3822,7 @@ button.phukien-toshow {
     padding: 20px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 

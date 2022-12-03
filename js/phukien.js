@@ -3,7 +3,6 @@ document.body.onload = function(){
     function runOnScroll() {
         var height= document.body.scrollTop;
         var phukien_fixed_div = document.getElementsByClassName("phukien__main__fixed-div")[0];
-        console.log(height);
         if (height>= 600) {
             phukien_fixed_div.style.display= "flex";
         }
