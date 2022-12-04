@@ -101,20 +101,129 @@ $(document).ready(function () {
 
         }
     );
-    for (let i = 0; i < 16; i++) {
-        $('.goi-y-hom-nay__content1').append('<div> </div>');
+    for (let i = 0; i < 10; i++) {
+        $('.goi-y-hom-nay__content1').append(`
+        <div class="laptop__main__divtype1-divdiv laptop__main__divtype-divdiv">
+        <a href="">
+            <img src="../asset/img/homepage/homepage-img1.jpg" alt="">
+            <p>
+                Asus TUF Gaming FX506LHB i5 10300H (HN188W)
+            </p>
+        </a>            
+        <ul>
+            <li>
+                <a href="">Ram 8GB</a>
+            </li>
+            <li>
+                <a href="">SSD 256GB</a>
+            </li>
+        </ul>        
+        <p class="price">
+            18.990.000d
+        </p>
+        <p>
+            Màn hình: 15.6", Full HD, 144Hz
+        </p>
+      <p>
+        CPU: i5, 10300H, 2.5GHz
+      </p>
+       
+    </div>
+
+        `);
     }
-    var path = "../asset/img/tin-tuc/tin-tuc"
-    for (let i = 0; i < 16; i++) {
-        var temp_path = `${path}${i + 1}.jpg`
-        $('.goi-y-hom-nay__content2').append(`<div><img src=${temp_path} alt=""></img></div>`);
+   
+    for (let i = 0; i < 10; i++) {
+        
+        $('.goi-y-hom-nay__content2').append(`
+        <div class="laptop__main__divtype1-divdiv laptop__main__divtype-divdiv">
+        <a href="">
+        <img src="../asset/img/homepage/homepage-img2.jpg" alt="">            <p>
+                Asus TUF Gaming FX506LHB i5 10300H (HN188W)
+            </p>
+        </a>            
+        <ul>
+            <li>
+                <a href="">Ram 8GB</a>
+            </li>
+            <li>
+                <a href="">SSD 256GB</a>
+            </li>
+        </ul>        
+        <p class="price">
+            18.990.000d
+        </p>
+        <p>
+            Màn hình: 15.6", Full HD, 144Hz
+        </p>
+      <p>
+        CPU: i5, 10300H, 2.5GHz
+      </p>
+       
+    </div>
+        `);
     }
 
-    for (let i = 0; i < 16; i++) {
-        $('.goi-y-hom-nay__content3').append('<div> </div>');
+    for (let i = 0; i < 10; i++) {
+        $('.goi-y-hom-nay__content3').append(
+            
+            `
+            <div class="laptop__main__divtype1-divdiv laptop__main__divtype-divdiv">
+        <a href="">
+        <img src="../asset/img/homepage/homepage-img3.jpg" alt="">            <p>
+                Asus TUF Gaming FX506LHB i5 10300H (HN188W)
+            </p>
+        </a>            
+        <ul>
+            <li>
+                <a href="">Ram 8GB</a>
+            </li>
+            <li>
+                <a href="">SSD 256GB</a>
+            </li>
+        </ul>        
+        <p class="price">
+            18.990.000d
+        </p>
+        <p>
+            Màn hình: 15.6", Full HD, 144Hz
+        </p>
+      <p>
+        CPU: i5, 10300H, 2.5GHz
+      </p>
+       
+    </div>
+            `
+        );
     }
-    for (let i = 0; i < 16; i++) {
-        $('.goi-y-hom-nay__content4').append('<div></div>');
+    for (let i = 0; i < 10; i++) {
+        $('.goi-y-hom-nay__content4').append(`
+        <div class="laptop__main__divtype1-divdiv laptop__main__divtype-divdiv">
+        <a href="">
+        <img src="../asset/img/homepage/homepage-img4.jpg" alt="">            <p>
+                Asus TUF Gaming FX506LHB i5 10300H (HN188W)
+            </p>
+        </a>            
+        <ul>
+            <li>
+                <a href="">Ram 8GB</a>
+            </li>
+            <li>
+                <a href="">SSD 256GB</a>
+            </li>
+        </ul>        
+        <p class="price">
+            18.990.000d
+        </p>
+        <p>
+            Màn hình: 15.6", Full HD, 144Hz
+        </p>
+      <p>
+        CPU: i5, 10300H, 2.5GHz
+      </p>
+       
+    </div>
+        `);
     };
 
     $('#goi-y-hom-nay-radio-4').click(function () {
