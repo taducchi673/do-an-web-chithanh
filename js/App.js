@@ -75,7 +75,7 @@ $(document).ready(function () {
             slidesToScroll: 3,
             prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
             nextArrow: '<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
-            centralPadding: '50px',
+            centralPadding: '10px',
 
         }
     );
@@ -101,6 +101,24 @@ $(document).ready(function () {
 
         }
     );
+    $(".header__address").click(function(){
+        $(".form").css("display", "flex")
+    });
+    $(".form-top-top>button").click(function(){
+        $(".form").css("display", "none")
+    });
+
+
+    $(".sanpham__main__div1__left__div1-slider").slick(
+        {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+             autoplay: false,
+             prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
+             nextArrow: '<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>'
+        }
+    )
     for (let i = 0; i < 10; i++) {
         $('.goi-y-hom-nay__content1').append(`
         <div class="laptop__main__divtype1-divdiv laptop__main__divtype-divdiv">
@@ -298,7 +316,7 @@ $(document).ready(function () {
     );
 
     $(".list-types-devices>div").hover(function () {
-        $(this).find("ul").toggle();
+        $(this).find("div:nth-child(2)").toggle();
     });
 
     $(".thuonghieuhangdau-show").click(
