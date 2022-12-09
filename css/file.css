@@ -276,7 +276,7 @@ header {
     height: 40px;
     list-style: none;
     padding: 0 10px;
-    font-size: 14;
+    font-size: 14px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -315,9 +315,8 @@ header {
 .header__main>ul>li {
     display: flex;
     list-style: none;
-    font-size: 14;
+    font-size: 14px;
     height: 55px;
-    line-height: 55px;
     padding: 15px 0;
     justify-content: center;
     cursor: pointer;
@@ -369,12 +368,12 @@ header {
 
 .header__main__pc-mayin__divcon {
     display: none;
-    width: 150px;
+    width: 170px;
     height: 140px;
     background-color: rgb(255, 255, 255);
     position: absolute;
     top: 55px;
-
+    font-size: 14px;
 }
 
 .header__main__pc-mayin__divcon li {
@@ -401,7 +400,7 @@ header {
     right: 0;
     display: none;
     border-radius: 4px;
-    font-size: 14;
+    font-size: 14px;
     padding: 10px 15px;
     text-align: left;
     background-color: white;
@@ -416,9 +415,15 @@ header {
     border-bottom: 1px solid rgb(94, 49, 49);
 }  */
 
-.header__main__dich-vu-tien-ich__box th {
-    width: 270px;
+.header__main__dich-vu-tien-ich__box {
+    width: 800px;
+    font-size: 14px;
+}
 
+.header__main__dich-vu-tien-ich__box th,
+.header__main__dich-vu-tien-ich__box td {
+    width: 290px;
+    
 }
 
 .header__main__dich-vu-tien-ich__box tr {
@@ -4868,7 +4873,7 @@ div.form >div {
 
 @media (min-width: 1300px) and (max-width: 1900px) {
     .header-top-banner {
-        padding: 0 18%;
+        padding: 0 11%;
     }
     header {
         padding: 0 10%;
@@ -4904,7 +4909,7 @@ div.form >div {
 
 @media (max-width: 1300px) {
     .header-top-banner {
-        padding: 0 11%;
+        padding: 0 1%;
     }
     header {
         padding: 0 1%;
