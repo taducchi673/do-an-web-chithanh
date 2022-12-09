@@ -92,7 +92,7 @@ body {
     height: 54px;
     width: 100%;
     background-color: #FFDB00;
-    padding: 0 11%;
+    /* padding: 0 11%; */
 
 }
 
@@ -1092,82 +1092,7 @@ main>ul.option__promo {
 
 /*  */
 
-@media screen and (min-width: 1800px) {
-    header {
-        padding: 0 18%;
-        min-width: 1300px;
-    }
 
-    .footer__above {
-        padding: 18px 18%;
-        min-width: 1300px;
-    }
-
-    .footer__below {
-        padding: 18px 18%;
-        min-width: 1300px;
-    }
-
-    main {
-        padding: 0 18%;
-        min-width: 1300px;
-    }
-
-    .laptop__main__fixed-div,
-    .phukien__main__fixed-div {
-        padding: 0 21%;
-    }
-}
-
-@media (min-width: 1300px) and (max-width: 1900px) {
-    header {
-        padding: 0 10%;
-        min-width: 1300px;
-    }
-
-    .footer__above {
-        padding: 18px 10%;
-        min-width: 1300px;
-    }
-
-    .footer__below {
-        padding: 18px 10%;
-        min-width: 1300px;
-    }
-
-    main {
-        padding: 0 10%;
-        min-width: 1300px;
-    }
-
-    .laptop__main__fixed-div,
-    .phukien__main__fixed-div {
-        padding: 0 13%;
-    }
-}
-
-@media (max-width: 1300px) {
-    header {
-        padding: 0 1%;
-    }
-
-    .footer__above {
-        padding: 18px 1%;
-    }
-
-    .footer__below {
-        padding: 18px 1%;
-    }
-
-    main {
-        padding: 0 1%;
-    }
-
-    .laptop__main__fixed-div,
-    .phukien__main__fixed-div {
-        padding: 0 3%;
-    }
-}
 
 
 /* Danh muc noi bat */
@@ -2129,6 +2054,8 @@ button.laptop__main__divtype1__absolute-quitbutton {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    
 }
 
 .laptop__trungtamlaptop ul {
@@ -4900,3 +4827,148 @@ div.form >div {
     background-color: #eef0f4;
 }
 
+@media screen and (min-width: 1900px) {
+    header {
+        padding: 0 18%;
+        min-width: 1300px;
+    }
+
+    .footer__above {
+        padding: 18px 18%;
+        min-width: 1300px;
+    }
+
+    .footer__below {
+        padding: 18px 18%;
+        min-width: 1300px;
+    }
+
+    main {
+        padding: 0 18%;
+        min-width: 1300px;
+    }
+
+    .laptop__main__fixed-div,
+    .phukien__main__fixed-div {
+        padding: 0 21%;
+    }
+
+    .header-top-banner {
+        padding: 0 18%;
+    }
+   
+    .laptop-trungtamlaptop-wrapper {
+        margin: 0 -30%;
+    }
+    
+}
+
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+    .header-top-banner {
+        padding: 0 18%;
+    }
+    header {
+        padding: 0 10%;
+        min-width: 1300px;
+    }
+
+    .footer__above {
+        padding: 18px 10%;
+        min-width: 1300px;
+    }
+
+    .footer__below {
+        padding: 18px 10%;
+        min-width: 1300px;
+    }
+
+    main {
+        padding: 0 10%;
+        min-width: 1300px;
+    }
+
+    .laptop__main__fixed-div,
+    .phukien__main__fixed-div {
+        padding: 0 13%;
+    }
+
+    .laptop-trungtamlaptop-wrapper {
+        margin: 0 -12% 0 -13%;
+    }
+  
+   
+}
+
+@media (max-width: 1300px) {
+    .header-top-banner {
+        padding: 0 11%;
+    }
+    header {
+        padding: 0 1%;
+    }
+
+    .footer__above {
+        padding: 18px 1%;
+    }
+
+    .footer__below {
+        padding: 18px 1%;
+    }
+
+    main {
+        padding: 0 1%;
+    }
+
+    .laptop__main__fixed-div,
+    .phukien__main__fixed-div {
+        padding: 0 3%;
+    }
+    .header-top-banner {
+        padding: 0 11%;
+    }
+
+    
+}
+
+
+
+.game-app-divphukiengaming__slick,
+.game-app-divlaptopgaming__slick,
+.game-app-divdienthoaigaming__slick
+ {
+    position: relative;
+}
+
+.game-app-divphukiengaming__slick button.slick-prev,
+.game-app-divlaptopgaming__slick button.slick-prev,
+.game-app-divdienthoaigaming__slick button.slick-prev {
+    top: 40%;
+    left: 0;
+}
+
+
+.game-app-divphukiengaming__slick button,
+.game-app-divlaptopgaming__slick button,
+.game-app-divdienthoaigaming__slick button {
+    height: 60px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(198, 198, 201);
+}
+
+.game-app-divphukiengaming__slick button.slick-next,
+.game-app-divlaptopgaming__slick button.slick-next,
+.game-app-divdienthoaigaming__slick button.slick-next {
+    top: 40%;
+    right: 0;
+}
+
+
+.header__main__dich-vu-tien-ich__box,
+.phu-kien-box,
+.header__main__pc-mayin__divcon
+ {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

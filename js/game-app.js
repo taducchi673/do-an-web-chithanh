@@ -30,10 +30,7 @@ document.body.onload = function(){
 
     var game_app_menu = document.querySelectorAll(".game-app__main__div2__left__div3>div>ul>li");
     var game_app_menu_div = document.querySelectorAll(".game-app__main__div2__left__div3>div");
-    console.log(game_app_menu);
-    // game_app_menu_div.splice(0,2);
-    console.log(game_app_menu_div);
-    // game_app_right_game_div.shift();
+ 
     var index = 0;
     var to_show = function(){
         for (var i = 0; i<game_app_menu_div.length; i++){
@@ -78,13 +75,7 @@ $(document).ready(function() {
                                     </p>
                                 </div>
         `);
-        $(".game-app-divdienthoaigaming__slick").append(`
         
-        `);
-        $(".game-app-divlaptopgaming__slick").append(`
-   
-    `);
-
     }
     
         $(".game-app-divphukiengaming__slick").slick(

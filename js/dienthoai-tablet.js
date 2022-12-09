@@ -99,7 +99,7 @@ $(document).ready(function(){
     };
     var total1=19;
     var num=15;
-    $(".dienthoai-laptop_xemthem").click(function(){
+    $(".dienthoai-tablet_xemthem").click(function(){
         if (total1>=50){
              num=0;
              document.querySelectorAll(".dienthoai-laptop_xemthem")[0].innerHTML = "Đã hết sản phẩm";
@@ -107,6 +107,7 @@ $(document).ready(function(){
             
         }
         total1+=num;
+        console.log(num);
         
         for (var i=0; i<num; i++){
             $(".div-laptop-content-content").append(
