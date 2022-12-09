@@ -3,13 +3,164 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 .container{
     max-width: 1200px;
     margin: auto;
+}
+
+header{
+    background-color: #FED100 ;
+    text-align: center;
+    height: 44px;
+}
+nav{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a li, a{
+    color: white;
+    font-size: 15px;
+}
+nav ul li:nth-child(2) a{
+    color: #FFF200;
+}
+nav ul li:nth-child(2) i{
+    color: #FFF200;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3){
+    position: relative;
+    
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    color: #333;
+    line-height: 30px;
+}
+nav ul li:nth-child(4) button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color: rgb(110, 108, 108);
+    color: white;
+}
+nav ul li:nth-child(5){
+    text-align: center;
+}
+nav ul li:nth-child(5):hover a{
+    color: #FFF200;
+}
+nav ul li:nth-child(6){
+    text-align: center;
+}
+nav ul li:nth-child(6):hover a{
+    color: #FFF200;
+}
+nav ul li:nth-child(7){
+    text-align: center;
+}
+nav ul li:nth-child(7):hover a{
+    color: #FFF200;
+}
+nav ul li:nth-child(8){
+    text-align: center;
+}
+nav ul li:nth-child(8):hover a{
+    color: #FFF200;
+}
+nav ul li:nth-child(9){
+    text-align: center;
+}
+nav ul li:nth-child(9):hover a{
+    color: #FFF200;
+}
+.menu-bar{
+    background-color: rgb(254,209,0);
+    
+}
+.menu-bar ul{
+    display: flex;
+    text-align: center;
+}
+.menu-bar ul li a{
+    color:black;
+    font-size: 14px;
+}
+.menu-bar ul li a i{
+    margin-right: 6px;
+    font-size: 15px;
+}
+.menu-bar-content > ul > li{
+    padding: 12px 11px;
+    transition: all 0.3s ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
+}
+.menu-bar-content > ul > li:nth-child(9){
+    position: relative;
+}
+.menu-bar-content > ul > li:nth-child(9):before{
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 12px;
+    width: 45px;
+    background-color: rgb(245,18,18);
+    border-radius: 5px;
+    right: -24px;
+    top: 0.5px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: #fff;
+}
+.menu-bar-content > ul > li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    background-color: #F51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 9px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
 }
 .adress-form {
     position: fixed;
@@ -369,6 +520,23 @@ li{
     transform: translateY(-20px);
 }
 
+.footer{
+    background: rgb(245, 243, 243);
+    width: 1200px;
+    text-align: center;
+    height: 60px;
+    color: black;
+    clear: left;
+    padding-top: 6px;
+    line-height: 30px;
+    min-height: 200px;
+    margin: auto;
+    margin-top:10px;
+}
+.footer_heading{
+    font-size: 16px;
+    text-transform: unset;
+}
 .grid{
     width: 1000px;
     max-width: 100%;

@@ -5,287 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đồng hồ</title>
-    <link rel="icon" type="image/x-icon" href="../asset/logo.png">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../css/docu.css">
-    <link rel="stylesheet" href="../css/file.css">
+    <link rel="stylesheet" href="../css/dongho.css">
 </head>
 
 <body>
-    <div class="form">
-        <div>
-            <div class="form-top">
-                <div class="form-top-top">
-                    <p>
-                        Địa chỉ đã chọn: Phường Điện Biên, Quận Ba Đình, Hà Nội
-                    </p>
-                    <button>
-                        <ion-icon name="close-outline"></ion-icon> Đóng
-                    </button>
+    <header>
+        <img src="../image/banner.jpg" alt="">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="homepage.html"><img style="width: 150px;" src="../image/logo.jpg" alt=""></a>
+                </li>
+                <li id="adress-form"><a href="#">Quận 12<i class="fas fa-sort-down"></i></a> </li>
+                <li><input type="text" placeholder="Bạn tìm gì...."><i class="fas fa-search"></i></li>
+                <li><a href="cart.html"><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></a></li>
+                <li id="register-form"><a href="lich-su-don-hang.html">Lịch sử đơn hàng</a></li>
+                <li><a href=""><span>Mua thẻ nạp ngay</span></a></li>
+                <li><a href="hai4-h-cong-nghe.html">24h Công nghệ</a></li>
+                <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                <div class="adress-form">
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng<span id="adress-close">X Đóng</span></h2>
+                        <form action="">
+                            <p>Do ảnh hưởng của dịch, một số tỉnh/thành tạm ngưng phục vụ tại siêu thị, chỉ kinh doanh online.</p>
+                            <select name="">
+                                <option value="#">--Chọn địa điểm</option>
+                                <option value="#">Nhà riêng</option>
+                            </select>
+                            <select name="">
+                                <option value="#">--Chọn quận/huyện</option>
+                                <option value="#">Hà Đông</option>
+                            </select>
+                            <select name="">
+                                <option value="#">--Chọn phường/xã</option>
+                                <option value="#">Tân Chánh Hiệp</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
                 </div>
-                <form action="">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <input type="text">
-                </form>
-            </div>
-            <div class="form-bottom">
-                <h4>
-                    Hoặc chọn tỉnh, thành phố
-                </h4>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
                 <ul>
-                    <li>
-                        Hà Nội
+                    <li><a href="dien-thoai.html"><i class="fas fa-mobile-alt"></i>Điện thoại</a></li>
+                    <li><a href="laptop.html"><i class="fas fa-laptop"></i>Laptop</a></li>
+                    <li><a href="tablet.html"><i class="fas fa-tablet-alt"></i>Tablet</a></li>
+                    <li><a href="phu-kien.html"><i class="fas fa-headphones-alt"></i>Phụ kiện<i style="margin-left:5px;" class="fas fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Chuột</a></li>
+                                <li><a href="">Bàn phím</a></li>
+                                <li><a href="">Balo</a></li>
+                                <li><a href="">Camera</a></li>
+                                <li><a href="">Tai nghe</a></li>
+                                <li><a href="">Loa</a></li>
+                                <li><a href="">Thẻ nhớ</a></li>
+                                <li><a href="">Ổ cứng di động</a></li>
+                                <li><a href="">USB</a></li>
+                                <li><a href="">Phần mềm</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        TP Hồ Chí Minh
+                    <li><a href="smartwatch.html"><i class="fas fa-stopwatch-20"></i>Đồng hồ thông minh</a></li>
+                    <li><a href="dong-ho.html"><i class="far fa-clock"></i>Đồng hồ thời trang</a></li>
+                    <li><a href="pc-mayin.html"><i class="fas fa-tv"></i>PC,Máy in<i style="margin-left:5px;" class="fas fa-sort-down"></i></a>
+                        <div class="submenu1">
+                            <ul>
+                                <li><a href="">Mực in</a></li>
+                                <li><a href="">Máy in</a></li>
+                                <li><a href="">Màn hình máy tính</a></li>
+                                <li><a href="">Máy tính để bàn</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        Quảng Bình
-                    </li>
-                    <li>
-                        Ninh Thuận
-                    </li>
-                    <li>
-                        An Giang
-                    </li>
-                    <li>
-                        Hà Nội
-                    </li>
-                    <li>
-                        TP Hồ Chí Minh
-                    </li>
-                    <li>
-                        Quảng Bình
-                    </li>
-                    <li>
-                        Ninh Thuận
-                    </li>
-                    <li>
-                        An Giang
-                    </li>
-                    <li>
-                        Hà Nội
-                    </li>
-                    <li>
-                        TP Hồ Chí Minh
-                    </li>
-                    <li>
-                        Quảng Bình
-                    </li>
-                    <li>
-                        Ninh Thuận
-                    </li>
-                    <li>
-                        An Giang
-                    </li>
-                    <li>
-                        Hà Nội
-                    </li>
-                    <li>
-                        TP Hồ Chí Minh
-                    </li>
-                    <li>
-                        Quảng Bình
-                    </li>
-                    <li>
-                        Ninh Thuận
-                    </li>
-                    <li>
-                        An Giang
-                    </li>
+                    <li><a href="docu.html">Máy cũ giá rẻ</a></li>
+                    <li><a href="sim-thecao.html">Sim, thẻ cào</a></li>
+                    <li><a href="dich-vu-tien-ich.html">Trả góp, điện nước</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="header-top-banner">
-        <img src="../asset/img/homepage/head-banner1.png" alt="">
-        <img src="../asset/img/homepage/head-banner2.png" alt="">
-        <img src="../asset/img/homepage/head-banner3.png" alt="">
-    </div>
-
-    <header>
-        <div class="header__top">
-            <a href="./homepage.html" class="header__logo">
-                <img src="../asset/thegioididong.jpeg" alt="">
-            </a>
-
-            <div href="sanpham.html" class="header__address header__like__button">Xem giá, tồn kho tại:
-                <span header__address__specific>Hà Nội</span>
-                <ion-icon name="caret-down-outline"></ion-icon>
-            </div>
-
-
-            <form action="" class="header__search">
-                <input type="text" class="header__search__text" placeholder="Bạn tìm gì?">
-                <button type="submit" class="header__search__button">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </form>
-            <a href="./lich-su-don-hang.html" class="header__history header__like__button">Lịch sử đơn hàng</a>
-            <a href="./cart.html" class="header__cart header__like__button">
-                <ion-icon name="cart-outline"></ion-icon>Giỏ hàng
-            </a>
-            <ul class="header__listop">
-                <li><a href="./hai4-h-cong-nghe.html">24h <br> Công nghệ</a></li>
-                <li><a href="./hoi-dap.html">Hỏi đáp</a></li>
-                <li><a href="./game-app.html">Game App</a></li>
-            </ul>
-        </div>
-        <div class="header__main">
-            <ul>
-                <li class="header__main__phone"><a href="./dien-thoai.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-phone-96x96-2.png" alt="">Điện thoại</a></li>
-                <li class="header__main__laptop"><a href="./laptop.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-laptop-96x96-1.png" alt="">Laptop</a></li>
-                <li class="header__main__tablet"><a href="./tablet.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-tablet-96x96-1.png" alt="">Tablet</a></li>
-                <li class="header__main__phu-kien"><a href="./phu-kien.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-phu-kien-96x96-1.png" alt="">Phụ kiện <ion-icon
-                            name="caret-down-outline"></ion-icon></a>
-                    <div class="phu-kien-box">
-                        <div class="phu-kien-box__left">
-                            <ul>
-                                <li class="box-details" ><span>PHỤ KIỆN DI ĐỘNG</span></li>
-                                <li><a href="sanpham.html">Sạc, cáp</a></li>
-                                <li><a href="sanpham.html">Ốp lưng điện thoại</a></li>
-                                <li><a href="sanpham.html">Ốp lưng máy tính bảng</a></li>
-                                <li><a href="sanpham.html">Miếng dán màn hình</a></li>
-                                <li><a href="sanpham.html">Gậy chụp ảnh, Gimbal</a></li>
-                                <li><a href="sanpham.html">Giá đỡ điện thoại</a></li>
-                                <li><a href="sanpham.html">Đế, móc điện thoại</a></li>
-                                <li><a href="sanpham.html">Túi chống nước</a></li>
-                                <li><a href="sanpham.html">Túi đựng AirPods</a></li>
-                                <li><a href="sanpham.html">AirTag</a></li>
-                                <li><a href="sanpham.html">Phụ kiện Tablet</a></li>
-                            </ul>
-                        </div>
-                        <div class="phu-kien-box__right">
-                            <div class="phu-kien-box__right__above">
-                                <ul>
-                                    <li class="box-details"><span>PHỤ KIỆN LAPTOP</span></li>
-                                    <li><a href="sanpham.html">Chuột, bàn phím</a></li>
-                                    <li><a href="sanpham.html">Thiết bị mạng</a></li>
-                                    <li><a href="sanpham.html">Balo, túi chống sốc</a></li>
-                                    <li><a href="sanpham.html">Giá đỡ laptop</a></li>
-                                    <li><a href="sanpham.html">Phần mềm</a></li>
-                                </ul>
-                                <ul>
-                                    <li class="box-details"><span>THIẾT BỊ NHÀ THÔNG MINH</span></li>
-                                    <li><a href="sanpham.html">Khoá điện tử</a></li>
-                                    <li><a href="sanpham.html">Camera, Webcam</a></li>
-                                    <li><a href="sanpham.html">Máy chiếu</a></li>
-                                    <li><a href="sanpham.html">TV Box</a></li>
-                                    <li><a href="sanpham.html">Ổ, bóng đèn thông minh</a></li>
-                                </ul>
-                                <ul>
-                                    <li class="box-details"><span>THƯƠNG HIỆU HÀNG ĐẦU</span></li>
-                                    <li><a href="sanpham.html">Apple</a></li>
-                                    <li><a href="sanpham.html">Samsung</a></li>
-                                    <li><a href="sanpham.html">Sony</a></li>
-                                    <li><a href="sanpham.html">JBL</a></li>
-                                    <li><a href="sanpham.html">Anker</a></li>
-                                </ul>
-                            </div>
-                            <div class="phu-kien-box__right__below">
-                                <ul>
-                                    <li class="box-details"><span>THIẾT BỊ ÂM THANH</span></li>
-                                    <li><a href="sanpham.html">Tai nghe</a></li>
-                                    <li><a href="sanpham.html">Loa</a></li>
-                                    <li><a href="sanpham.html">Micro thu âm điện thoại</a></li>
-                                    
-                                </ul>
-                                <ul>
-                                    <li class="box-details"><span>THIẾT BỊ LƯU TRỮ</span></li>
-                                    <li><a href="sanpham.html">Ổ cứng di động</a></li>
-                                    <li><a href="sanpham.html">USB</a></li>
-                                    <li><a href="sanpham.html">Thẻ nhớ</a></li>
-                
-                                </ul>
-                                <ul>
-                                    <li class="box-details"><span>PHỤ KIỆN KHÁC</span></li>
-                                    <li><a href="sanpham.html">Phụ kiện ô tô</a></li>
-                                    <li><a href="sanpham.html">Máy tính cầm tay</a></li>
-                                    <li><a href="sanpham.html">Quạt mini</a></li>
-                                    <li><a href="sanpham.html">Pin tiểu</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="header__main__smartwatch"><a href="./smartwatch.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png" alt=""> SmartWatch</a></li>
-                <li class="header__main__watch"><a href="./dong-ho.html"><img
-                            src="https://cdn.tgdd.vn//content/watch-icon-96x96.png" alt="">Đồng hồ</a></li>
-                <li class="header__main__pc-mayin"><a href="./pc-mayin.html"><img
-                            src="https://cdn.tgdd.vn//content/icon-pc-96x96.png" alt="">PC/ Máy in
-                        <ion-icon name="caret-down-outline"></ion-icon>
-                    </a>
-                    <ul class="header__main__pc-mayin__divcon">
-                        <li>
-                            <a href="sanpham.html">Máy in</a>
-                        </li>
-                        <li>
-                            <a href="sanpham.html">Mực in</a>
-                        </li>
-                        <li>
-                            <a href="sanpham.html">Màn hình máy tính</a>
-                        </li>
-                        <li>
-                            <a href="sanpham.html">Máy tính để bàn</a>
-                        </li>
-                    </ul>
-                </li>  
-                <li class="header__main__may-cu-gia-re"><a href="docu.html">Máy cũ giá rẻ</a></li>
-                <li class="header__main__sim-the-cao"><a href="sim-thecao.html">Sim, thẻ cào</a></li>
-                <li class="header__main__dich-vu-tien-ich"><a href="dich-vu-tien-ich.html">Dịch vụ tiện ích<ion-icon
-                            name="caret-down-outline"></ion-icon></a>
-                    <table class="header__main__dich-vu-tien-ich__box">
-                        <tr class="table__columns">
-                            <th>
-                                <p><span class="box-details">TRẢ GÓP, ĐIỆN NƯỚC, VÉ CÁC LOẠI</span></p>
-                            </th>
-                            <th>
-                                <p><span class="box-details">INTERNET, CƯỚC, TRUYỀN HÌNH</span></p>
-                            </th>
-                            <th>
-                                <p><span class="box-details">BẢO HIỂM, VIỆN PHÍ</span></p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Đóng tiền trả góp</td>
-                            <td>Đóng tiền net FPT</td>
-                            <td>Mua bảo hiểm xe máy, ô tô</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Đóng tiền điện
-                            </td>
-                            <td>Đóng tiền net, cáp VNPT</td>
-                            <td>Đóng tiền bảo hiểm</td>
-                        </tr>
-                        <tr>
-                            <td>Đóng tiền nước</td>
-                            <td>
-                                Đóng tiền cước điện thoại trả sau
-                            </td>
-                            <td>
-                                Đóng viện phí đại học Y Dược TPHCM
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td>Đóng tiền vé tàu, xe, máy bay</td>
-                            <td>
-                                Lắp đặt Internet truyền hình
-                            </td>
-                            <td>Mua gói cước truyền hình</td>
-                        </tr>
-                    </table>
-                </li>
-            </ul>
-        </div>
-    </header>
-   
+    </section>
     <section class="slider">
         <div class="container">
             <div class="slider-content">
@@ -793,154 +601,77 @@
         </div>
     </section>
     <hr>
-    <footer>
-        <div class="footer__above">
-            <div class="footer__div1">
-                <ul>
-                    <li>
-                        <a href="sanpham.html">Tích điểm Quà tặng VIP</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Lịch sử mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Tìm hiểu về mua trả góp</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Chính sách bảo hành</a>
-                    </li>
-                    <li  class="footer__div1__tohide">
-                        Xem thêm <ion-icon name="caret-down-outline"></ion-icon>
-                    </li>
-                    <div class="footer__div1__toshow">
-                        <li><a href="sanpham.html">Giao hàng & Thanh toán</a></li>
-                        <li><a href="sanpham.html">Hướng dẫn mua online</a></li>
-                        <li><a href="sanpham.html">Bán hàng doanh nghiệp</a></li>
-                        <li><a href="sanpham.html">Phiếu mua hàng</a></li>
-                        <li><a href="sanpham.html">In hoá đơn điện tử</a></li>
-                        <li><a href="sanpham.html">Quy chế hoạt động</a></li>
-                        <li><a href="sanpham.html">Nội dung cửa hàng</a></li>
-                        <li><a href="sanpham.html">Chất lượng phục vụ</a></li>
-                        <li><a href="sanpham.html">Cảnh báo giả mạo</a></li>
-                        <li><a href="sanpham.html">Chính sách khui hộp sản phẩm Apple</a></li>
-                    </div>
-                </ul>
-            </div>
-            <div class="footer__div2">
-                <ul>
-                    <li>
-                       <a href="sanpham.html"> Giới thiệu công ty (MWG.vn)</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Tuyển dụng</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Gửi góp ý, khiếu nại</a>
-                    </li>
-                    <li>
-                        <a href="sanpham.html">Tìm siêu thị (3.333 shop)</a>
-                    </li>
-                    <li>
-                       <a href="sanpham.html"> Xem bản mobile</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__div3">
-                <ul>
-                    <li>
-                        <a href="sanpham.html">Tổng đài hỗ trợ (Miễn phí gọi)</a>
-                    </li>
-                    <li>
-                        <span class="span-before-phone">Gọi mua:</span><span class="phone-number">1800.1060</span> (7:30
-                        - 22:00)
-                    </li>
-                    <li>
-                        <span class="span-before-phone">Kỹ thuật:</span><span class="phone-number">1800.1763</span>
-                        (7:30 - 22:00)
-                    </li>
-                    <li>
-                        <span class="span-before-phone">Khiếu nại:</span><span class="phone-number">1800.1062</span>
-                        (8:00 - 21:30)
-                    </li>
-                    <li>
-                        <span class="span-before-phone">Bảo hành:</span><span class="phone-number">1800.1064</span>
-                        (8:00 - 21:00)
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__div4">
-                <div class="footer__div4__above">
-                    <div>
-                        <img src="../asset/img/homepage/facebook.png" alt="">
-                       <a href="sanpham.html"> 3773k Fan</a>
-                    </div>
-                    <div>
-                        <img src="../asset/img/homepage/youtube.png" alt="">
-                        <a href="sanpham.html">850k Đăng ký</a>
-                    </div>
-                    <div>
-                        <img src="../asset/img/homepage/zalo.png" alt="">
-                        <a href="sanpham.html">Zalo TGDĐ</a>
-                    </div>
+    <footer class="footer">
+        <div class="grid">
+            <div class="row">
+                <div class="column">
+                    <h3 class="footer_heading">Trang chủ</h3>
+                    <ul class="list">
+                        <li class="list-items">
+                            <a href="">Lịch sử mua hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Cộng tác bán hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Tìm hiểu trả góp</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Chính sách bảo hành</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer__div4__center">
-                    <img src="https://mdcop.vn/wp-content/uploads/2019/04/da-thong-bao-bo-cong-thuong-705x267.png"
-                        alt="">
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
+                <div class="column">
+                    <h3 class="footer_heading">Giới thiệu công ty</h3>
+                    <ul class="list">
+                        <li class="list-items">
+                            <a href="">Tuyển dụng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Gửi góp ý, khiếu nại</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Tìm siêu thị</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Xem bản mobile</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer__div4__below">
-                    Website cùng tập đoàn
-                    <div>
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-                        <img src="https://th.bing.com/th/id/R.96a214330be9529e20c294160f638df6?rik=77%2bpIliyFCVhAA&pid=ImgRaw&r=0"
-                            alt="">
-
-
-                    </div>
+                <div class="column">
+                    <h3 class="footer_heading">Tổng đài hỗ trợ</h3>
+                    <ul class="list">
+                        <li class="list-items">
+                            <a href="">Gọi mua <mark>1800.1060</mark></a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Kỹ thuật <mark>1800.1763</mark></a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Khiếu nại <mark>1800.1062</mark></a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Bảo hành <mark>1800.1064</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="footer_heading">Giới thiệu</h3>
+                    <ul class="list">
+                        <li class="list-items">
+                            <a href="">Điều khoản sử dụng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Chính sách bảo mật</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="">Quảng cáo</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer__below">
-            <p>
-                © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007.
-                GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
-                <br> Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
-                cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="sanpham.html" style="color: blue">Xem
-                    chính sách sử dụng</a>
-            </p>
         </div>
     </footer>
-   
     <script src="js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/App.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>   
