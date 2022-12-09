@@ -139,6 +139,7 @@ body {
 header {
     background-color: #ffd400;
     min-width: 1000px;
+    z-index: 1000000001;
 }
 
 
@@ -320,6 +321,7 @@ header {
     padding: 15px 0;
     justify-content: center;
     cursor: pointer;
+    z-index: 10000000000000;
 }
 
 
@@ -4970,5 +4972,5 @@ div.form >div {
 .header__main__pc-mayin__divcon
  {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    z-index: 1000000001;
 }

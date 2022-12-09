@@ -6,7 +6,7 @@ $(document).ready(function(){
     for (var i=0; i<19; i++){
         $(".div-laptop-content-content").append(
             `
-            <a class="dienthoai-laptop-content__items">
+            <a class="dienthoai-laptop-content__items" href="sanpham.html">
                  <img src="../asset/img/dienthoai/dienthoai__main__div-img1.jpg" alt="">
                  <p>
                    IPhone 14 Plus
@@ -47,8 +47,8 @@ $(document).ready(function(){
     for (var i=0; i<19; i++){
         $(".div-tablet-content-content").append(
             `
-            <a class="dienthoai-laptop-content__items">
-         <img src="../asset/img/tablet/tablet__main__img1.jpg" alt="">
+            <a class="dienthoai-laptop-content__items" href="sanpham.html">
+         <img src="../asset/img/tablet/tablet__main__img1.jpg" alt="href="sanpham.html"">
          <p>
            iPad Pro M2 12.9" WiFi Cellular 2TB
          </p>
@@ -112,7 +112,7 @@ $(document).ready(function(){
         for (var i=0; i<num; i++){
             $(".div-laptop-content-content").append(
                 `
-                <a class="dienthoai-laptop-content__items">
+                <a class="dienthoai-laptop-content__items" href="sanpham.html">
                      <img src="../asset/img/dienthoai/dienthoai__main__div-img1.jpg" alt="">
                      <p>
                        IPhone 14 Plus
@@ -164,7 +164,7 @@ $(document).ready(function(){
         for (var i=0; i<num2; i++){
             $(".div-tablet-content-content").append(
                 `
-                <a class="dienthoai-laptop-content__items">
+                <a class="dienthoai-laptop-content__items" href="sanpham.html">
                 <img src="../asset/img/tablet/tablet__main__img1.jpg" alt="">
                 <p>
                   iPad Pro M2 12.9" WiFi Cellular 2TB
