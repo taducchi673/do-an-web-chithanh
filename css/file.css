@@ -4871,7 +4871,7 @@ div.form >div {
 }
 
 
-@media (min-width: 1300px) and (max-width: 1900px) {
+@media (min-width: 1200px) and (max-width: 1900px) {
     .header-top-banner {
         padding: 0 11%;
     }
@@ -4907,7 +4907,7 @@ div.form >div {
    
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .header-top-banner {
         padding: 0 1%;
     }
